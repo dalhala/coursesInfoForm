@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="coursesInfoFrom.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <h1 style="text-align: center;"> Courses Information From </h1>
+        <h2 style="text-align: center;"> Faculty of Sciences </h2>
+        <form method="post" action="coursesInfoFormVal.php">
+            <label for="code">code:</label>
+            <input type="text" name="code" id="code">
+            <br/>
+            <br/>
+            <label for="title">title: </label>
+            <input name="title" id="title">
+            <br/>
+            <br/>
+            <label for="ctype">type: </label>
+            <select name="ctype" id="ctype">
+                <option value="L1">L1</option>
+                <option value="L2">L2</option>
+                <option value="L3">L3</option>
+                <option value="M1">M1</option>
+            </select>
+            <br/>
+            <label for="dep">department: </label>
+            <select name="dep" id="dep">
+                <option value="CS">CS</option>
+                <option value="BCM">BCM</option>
+                <option value="BIO">BIO</option>
+                <option value="CHEM">CHEM</option>
+                <option value="GEO">GEO</option>
+                <option value="PHYS">PHYS</option>
+                <option value="ELEC">ELEC</option>
+                <option value="STAT">STAT</option>
+                <option value="MATH">MATH</option>
+                <option value="LAN">LAN</option>
+            </select> 
+            <br/>
+            <label for="semester">semester:  </label>
+            <select name="semester" id="semester">
+                <option value="1">S1</option>
+                <option value="2">S2</option>
+            </select>
+            <br/>
+            <label for="coption">option: </label>
+            <select  name="coption" id="coption">
+                <option value="0">OB</option>
+                <option value="1">OP1</option>
+                <option value="3">OP3</option>
+                <option value="4">OP3</option>
+            </select>
+            <br/>
+            <br/>
+            <label for="prereq">prerequisite: </label>
+            <input type="text" name="prereq" id="prereq">
+            <br/>
+            <br/>
+            <label for="prof">professor:  </label>
+            <input type="text" name="prof" id="prof">
+            <br/>
+            <br/>
+            <label for="nbOfCrdts">number of credits:  </label>
+            <input type="text" name="nbOfCrdts" id="nbOfCrdts">
+            <br/>
+            <br/>
+            <label for="maxNbOfStds">maximun number of students:  </label>
+            <input type="text" name="maxNbOfStds" id="maxNbOfStds">
+            <br/>
+            <br/>
+            <input type="submit" value="submit">
+            <button action='location: ./coursesInfoFormShow.php'>
+                <span>go to table</span>
+            </button>
+        </form>
+        
+    </body>
+    <footer></footer>
+</html>
